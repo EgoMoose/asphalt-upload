@@ -135,6 +135,9 @@ local function uploadAsphalt()
 		"sync",
 		"--target", "cloud",
 		"--api-key", apiKey,
+	}, { 
+		shell = true,
+		stdio = "forward",
 	})
 
 	if result.ok then
