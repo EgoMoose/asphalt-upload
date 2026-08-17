@@ -133,7 +133,6 @@ local function uploadAsphalt()
 	-- stylua: ignore
 	local result = process.exec("asphalt", {
 		"sync",
-		"--target", "cloud",
 		"--api-key", apiKey,
 	}, { 
 		shell = true,
